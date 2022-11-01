@@ -2,16 +2,11 @@
 
 namespace assigmentMVC.Controllers
 {
-    public class HomeController : Controller
+    public class DoctorController : Controller
     {
         public IActionResult Index()
         {
             return View();
-        }
-
-        public IActionResult Contact() 
-        { 
-            return View(); 
         }
     }
 }
