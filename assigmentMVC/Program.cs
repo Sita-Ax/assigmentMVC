@@ -37,7 +37,7 @@ namespace lession1MVC
             //use the routing 
             app.UseRouting();
             //for the authorization
-            //app.UseAuthorization();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
