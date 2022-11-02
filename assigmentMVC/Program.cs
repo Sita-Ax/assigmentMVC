@@ -1,3 +1,5 @@
+using assigmentMVC.Models;
+
 namespace lession1MVC
 {
     public class Program
@@ -46,6 +48,11 @@ namespace lession1MVC
                 //   pattern: "PreferdLanguage",
                 //   defaults: new { controller = "Demo", action = "PreferdLanguageCookie" }
                 //   );
+                endpoints.MapControllerRoute(
+                    name: "FeverRoute",
+                    pattern: "FeverCheck",
+                    defaults: new {controller = "Doctor", action = "FeverCheck"}
+                    );
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}"
