@@ -7,10 +7,11 @@
     <div class="wrapper">
         <form asp-action="FeverCheck" asp-controller="Doctor" method="post">
             <input type="number" placeholder="Check your temp" name="temp" value="" min="0" max="100" step="1" />
-           @* <br /><input type="radio" checked="checked" id="Temperature" value="Celsius" placeholder="Celsius"/>
-            <br /><input type="radio" checked="checked" id="Temperature" value="Fahrenhigt" placeholder="Fahrenhigt"/>*@
+            <br /><span>Celsius</span><input type="radio" name="TempCelsius" value="Celsius" />
+            <br /><span>Fahrenhigt</span><input type="radio" name="TempFahrenheit" value="Fahrenhigt" />
             <br /><button type="submit">Check your temp</button>
-            <p>
+@*            <b>Temperature in: </b><p>@if(@ViewBag.Celsius || @ViewBag.Fahrenhigt)</p>
+*@                <p>
                 @if (ViewBag.Msg != null)
                 {
                     @ViewBag.Msg

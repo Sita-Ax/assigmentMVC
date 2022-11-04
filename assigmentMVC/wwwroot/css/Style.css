@@ -1,3 +1,42 @@
-﻿body {
-    background-color: cadetblue;
+﻿:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid var(--purple);
+}
+
+nav{
+    display: flow;
+ 
+}
+
+li{
+    display: inline-flex;
+    justify-content: space-between;
+    color: var(--darkest);
+    
+}
+
+footer{
+    margin-top: auto;
 }

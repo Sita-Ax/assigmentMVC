@@ -20,11 +20,14 @@
                     <a asp-action="FeverCheck" asp-controller="Doctor">Doctor</a>
                 </li>
                 <li>
-                    @Html.ActionLink("Demo page", "Index", "Demo");
+                    <a asp-action="GuessGame" asp-controller="Guess">Guess Game</a>
                 </li>
-                @*   <li>
-                @Html.ActionLink("Language", "PreferdLanguageCookie", "Demo");
-                </li>*@
+                <li>
+                    @Html.ActionLink("Demo page", "Index", "Demo")
+                </li>
+                   <li>
+                @Html.ActionLink("Language", "PreferdLanguageCookie", "Demo")
+                </li>
             </ul>
         </nav>
     </header>

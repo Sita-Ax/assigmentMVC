@@ -43,11 +43,11 @@ namespace lession1MVC
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapControllerRoute(
-                //   name: "PrefLangCustomRoute",
-                //   pattern: "PreferdLanguage",
-                //   defaults: new { controller = "Demo", action = "PreferdLanguageCookie" }
-                //   );
+                endpoints.MapControllerRoute(
+                   name: "PrefLangCustomRoute",
+                   pattern: "PreferdLanguage",
+                   defaults: new { controller = "Demo", action = "PreferdLanguageCookie" }
+                   );
                 endpoints.MapControllerRoute(
                     name: "FeverRoute",
                     pattern: "FeverCheck",
@@ -59,7 +59,6 @@ namespace lession1MVC
                     );
             });
 
-            //app.MapGet("/Home", () => "Hello Happy hacker!"); comment out
             app.Run();
         }
     }
