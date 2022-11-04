@@ -49,6 +49,11 @@ namespace lession1MVC
                    defaults: new { controller = "Demo", action = "PreferdLanguageCookie" }
                    );
                 endpoints.MapControllerRoute(
+                   name: "GuessRoute",
+                   pattern: "GuessNumber",
+                   defaults: new { controller = "Guess", action = "GuessNumber" }
+                   );
+                endpoints.MapControllerRoute(
                     name: "FeverRoute",
                     pattern: "FeverCheck",
                     defaults: new {controller = "Doctor", action = "FeverCheck"}
