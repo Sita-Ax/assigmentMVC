@@ -5,10 +5,9 @@ namespace assigmentMVC.Controllers
     public class GuessController : Controller
     {
         [HttpPost]
-        public IActionResult GuessNumber(Random number)
-        {
-           
-            ViewBag.Number = Models.Guess.RandomNumbers(number);
+        public IActionResult GuessNumber(int guess)
+        {  
+            ViewBag.Number = Models.Guess.RandomNumbers(guess);
             return View();
         }
 
