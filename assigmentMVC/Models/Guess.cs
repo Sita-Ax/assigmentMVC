@@ -3,11 +3,11 @@
 namespace assigmentMVC.Models
 {
     public class Guess
-    {   
+    {
+        static int guesses = 0;
         public static string RandomNumbers(int guess, int rand)
         {
            
-            int guesses = 0;
             while(guesses != 10 || rand == guess) { 
 
                 if (guess < rand)
