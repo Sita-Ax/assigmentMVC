@@ -17,7 +17,7 @@ namespace assigmentMVC.Controllers
             {
                 //add cookie
                 CookieOptions options = new CookieOptions();
-                options.Expires = DateTimeOffset.UtcNow.AddMinutes(10);
+                options.Expires = DateTime.Now.AddMinutes(10);
 
                 int r = random.Next(0, 100);
                 Response.Cookies.Append("random", r.ToString(), options);
@@ -42,7 +42,7 @@ namespace assigmentMVC.Controllers
             {
                 //remove cookie
                 CookieOptions option = new CookieOptions();
-                option.Expires = DateTime.Now.AddMinutes(-10);
+                option.Expires = DateTime.Now.AddDays(-1);
                
                 random.Next(0, 100);
                 Response.Cookies.Append("random", "", option);
