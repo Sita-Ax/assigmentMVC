@@ -25,17 +25,5 @@ namespace assigmentMVC.Controllers
         {
             return View();
         }
-
-        //[HttpPost]
-        //public IActionResult TempSelect(Doctor doctor)
-        //{
-        //    if (doctor != null)
-        //    {
-        //        ViewBag.Celsius = doctor.Celisius.ToString();
-        //        ViewBag.Fahrenhigt = doctor.Fahrenhigt.ToString();
-        //        return View();
-        //    }
-        //        return View();
-        //}
     }
 }

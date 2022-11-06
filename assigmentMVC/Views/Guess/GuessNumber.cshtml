@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "GuessNumber";
 }
 
@@ -7,7 +6,7 @@
 <div class="containerGuess">
     <div class="wrapperGuess">
         <form asp-action="GuessNumber" asp-controller="Guess" method="post">
-            <input type="number" placeholder="Check your number" name="num" value="" />
+            <input type="number" placeholder="Check your number" name="num" value="" min="0" max="100" step="1"/>
             <br />
             <br /><button class="submit" type="submit">Check your guess</button>
              <p>
@@ -17,6 +16,7 @@
                 }
             </p>
         </form>
+        <button type="submit">Reset</button>
     </div>
 </div>
 

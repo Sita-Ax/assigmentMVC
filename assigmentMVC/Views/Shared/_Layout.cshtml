@@ -7,7 +7,9 @@
 </head>
 <body>
     <header>
-        <h3 class="logo">Logo</h3>
+        <p>
+            <a href="@Url.Action("Index", "Home")"><img src="~/image/blue.scull.png" alt="Logo" style="height:50px; width:50px;" /></a>
+        </p>
         <nav>
             <ul>
                 <li>
@@ -25,15 +27,15 @@
                 <li>
                     @Html.ActionLink("Demo page", "Index", "Demo")
                 </li>
-                   <li>
+                  @* <li>
                 @Html.ActionLink("Language", "PreferdLanguageCookie", "Demo")
-                </li>
+                </li>*@
             </ul>
         </nav>
     </header>
     <div>
         @RenderBody()
     </div>
-    <footer>&copy; Lexicon</footer>
+    <footer>&copy; Zita</footer>
 </body>
 </html>
