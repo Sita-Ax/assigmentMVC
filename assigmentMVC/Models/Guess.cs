@@ -7,9 +7,7 @@ namespace assigmentMVC.Models
         static int guesses = 0;
         public static string RandomNumbers(int guess, int rand)
         {
-           
             while(guesses != 10 || rand == guess) { 
-
                 if (guess < rand)
                 {
                     guesses++;
@@ -28,6 +26,11 @@ namespace assigmentMVC.Models
             }
             return "No input.";
            
+        }
+        public static int GetRandom()
+        {
+            Random random = new Random();
+            return random.Next(1, 100);
         }
     }
 }

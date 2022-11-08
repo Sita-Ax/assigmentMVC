@@ -33,8 +33,8 @@ nav{
  
 }
 
-.container{
-    background-color: darkmagenta;
+.container {
+    background-image: linear-gradient(var(--pink), var(--purple), var(--light));
 }
 
 .container input{
@@ -52,10 +52,16 @@ nav{
 
 .containerGuess input {
     background-image: linear-gradient(var(--pink), var(--purple), var(--light));
+    width: 150px;
+    color: var(--darker);
 }
 
-.submit{
-    background-color: var(--purple), var(--light);
+.containerGuess button {
+    background-color: var(--purple);
+}
+
+.containerGuess .wrapperGuess .reset {
+    background-color: var(--purple);
 }
 ul {
     display: inline-flex;
